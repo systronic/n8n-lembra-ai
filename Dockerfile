@@ -14,7 +14,7 @@ RUN apk add --no-cache \
     && find /lib /usr/lib -type f -name '*.so*' -exec cp -a {} /out/lib/ \; \
     && find /lib /usr/lib -type l -name '*.so*' -exec cp -a {} /out/lib/ \;
 
-FROM n8nio/n8n:2.34.6
+FROM n8nio/n8n:2.38.6
 
 USER root
 
